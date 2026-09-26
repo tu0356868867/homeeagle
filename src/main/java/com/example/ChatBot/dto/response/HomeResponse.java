@@ -1,0 +1,20 @@
+package com.example.ChatBot.dto.response;
+
+import lombok.*;
+import lombok.experimental.FieldDefaults;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class HomeResponse {
+    private String id;
+    private String address;
+    private String  contact;
+    private Integer  price;
+    private String type;
+    private Integer area;
+    private String picture;
+    private String describe;
+}
