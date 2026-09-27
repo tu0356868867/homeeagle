@@ -33,7 +33,7 @@ public class AuthenticationController {
 
         ResponseCookie cookie = ResponseCookie.from("accessToken",  result.getToken())
                 .httpOnly(true)
-                .secure(false)
+                .secure(true)
                 .sameSite("Lax")
                 .path("/")
                 .maxAge(Duration.ofHours(1))
@@ -62,7 +62,7 @@ public class AuthenticationController {
 
         ResponseCookie cookie = ResponseCookie.from("accessToken", token)
                 .httpOnly(true)
-                .secure(false)
+                .secure(true)
                 .path("/")
                 .maxAge(Duration.ofHours(1))
                 .sameSite("Lax")
