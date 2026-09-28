@@ -45,7 +45,7 @@ public class Home {
     @Column(nullable = false)
     private String picture;
 
-
+    @Column(name = "descr")
     private String describe;
     private boolean statusDelete = false;
 
